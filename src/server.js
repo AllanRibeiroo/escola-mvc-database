@@ -18,7 +18,7 @@ app.delete('/deletar-curso', cursoControllers.deletarCursos)
 app.get('/professores',professorControllers.listarProfessor)
 app.post('/criar-professores',professorControllers.criarProfessor)
 app.put('/atualizar-professores', professorControllers.atualizarProfessor)
-app.delete('/deletar-professores',professorControllers.criarProfessor)
+app.delete('/deletar-professores',professorControllers.deletarProfessor)
 
 app.get('/alunos', alunoControtllers.listarAluno)
 app.post('/criar-alunos', alunoControtllers.criarAluno)
