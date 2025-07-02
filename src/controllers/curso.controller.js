@@ -1,5 +1,12 @@
-function listarCursos(request, response) {
-response.send("Função responsavel pela listagem")
+// Importar o model de cursos
+const cursomodel = require ("../models/curso.model")
+
+
+ async function listarCursos(request, response) {
+    // Chamar a função listarTodosCursos do model 
+    const cursos = await cursomodel.listarTodosCursos()
+
+    response.json(cursos)
 }
 
 function criarCursos(request,response){
